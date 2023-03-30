@@ -6,14 +6,22 @@ public:
 	string surname;
 	int age;
 	float avg_mark;
+	
+	void clear() {
+	name = " no name";
+	surname = " no surname";
+	age = 0;
+	avg_mark = 0.0;
+        }
+	string convert(){
+		string msg = "";
+		msg += name " " + surname;
+		mag += " (age: " + to_string(age);
+		msg += ", average mark: " + to_string(avg_mark) + ")";
+	}		
 };
 
-void clear(Student st) {
-	st.name = " no name";
-	st.surname = " no surname";
-	st.age = 0;
-	st.avg_mark = 0.0;
-}
+
 
 int main() {
 	Student st1;
@@ -24,18 +32,12 @@ int main() {
 	st1.avg_mark = 9.8;
 	
 	cout < "Before: " << endl;
-	cout << st1.name << endl;
-	cout << st1.surname << endl;
-	cout << st1.age << endl;
-	cout << st1.avg_mark << endl;
-	
-	clear(st1);
+	cout << st1.convert << endl;
+
+	ct1.clear
 	
 	cout < "\nAfter: " << endl;
-	cout << st1.name << endl;
-	cout << st1.surname << endl;
-	cout << st1.age << endl;
-	cout << st1.avg_mark << endl;
+	cout << st1.convert << endl;
 	
 	return 0;
 }
