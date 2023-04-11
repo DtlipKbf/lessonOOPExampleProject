@@ -6,6 +6,18 @@ public:
 	string surname;
 	int age;
 	float avg_mark;
+
+	//default constructor
+	Student() {
+		name = "no name";
+	    surname = "no surname";
+		age = 15;
+		avg_mark = 4;
+	}
+
+	~Student() {
+		cout << "destructor" << endl;
+	}
 	
 	void clear() {
 	name = " no name";
@@ -15,29 +27,28 @@ public:
         }
 	string convert(){
 		string msg = "";
-		msg += name " " + surname;
-		mag += " (age: " + to_string(age);
+		msg += name + " " + surname;
+		msg += " (age: " + to_string(age);
 		msg += ", average mark: " + to_string(avg_mark) + ")";
 	}		
 };
 
-
-
 int main() {
 	Student st1;
-	
-	st1.name = "Ivan";
+	cout << st1.convert() << endl;
+
+	/*st1.name = "Ivan";
 	st1.surname = "Ivanov";
 	st1.age = 14;
 	st1.avg_mark = 9.8;
 	
-	cout < "Before: " << endl;
-	cout << st1.convert << endl;
+	cout << "Before: " << endl;
+	cout << st1.convert() << endl;
 
-	ct1.clear
+	st1.clear();
 	
-	cout < "\nAfter: " << endl;
-	cout << st1.convert << endl;
+	cout << "\nAfter: " << endl;
+	cout << st1.convert() << endl;*/
 	
 	return 0;
 }
