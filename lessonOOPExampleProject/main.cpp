@@ -15,6 +15,14 @@ public:
 		avg_mark = 4;
 	}
 
+	//constructor with arguments
+	Student(string nm, string surnm, int a, float mark) {
+		name = nm;
+		surname = surnm;
+		age = a;
+		avg_mark = mark;
+	}
+
 	~Student() {
 		cout << "destructor" << endl;
 	}
@@ -35,7 +43,9 @@ public:
 
 int main() {
 	Student st1;
+	Student st2("Ivan", "ivanov", 14, 10);
 	cout << st1.convert() << endl;
+	cout << st2.convert() << endl;
 
 	/*st1.name = "Ivan";
 	st1.surname = "Ivanov";
