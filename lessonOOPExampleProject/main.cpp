@@ -23,6 +23,11 @@ public:
 		avg_mark = mark;
 	}
 
+	Student(string nm, string surnm) {
+		name = nm;
+		surname = surnm;
+	}
+
 	~Student() {
 		cout << "destructor" << endl;
 	}
@@ -46,19 +51,6 @@ int main() {
 	Student st2("Ivan", "ivanov", 14, 10);
 	cout << st1.convert() << endl;
 	cout << st2.convert() << endl;
-
-	/*st1.name = "Ivan";
-	st1.surname = "Ivanov";
-	st1.age = 14;
-	st1.avg_mark = 9.8;
-	
-	cout << "Before: " << endl;
-	cout << st1.convert() << endl;
-
-	st1.clear();
-	
-	cout << "\nAfter: " << endl;
-	cout << st1.convert() << endl;*/
 	
 	return 0;
 }
