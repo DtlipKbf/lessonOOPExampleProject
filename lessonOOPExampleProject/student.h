@@ -1,3 +1,5 @@
+#include "main.h"
+
 class Student {
 private:
 	string name;
@@ -9,49 +11,26 @@ protected:
 
 public:
 	//default constructor
-	Student() {
-		name = "no name";
-		surname = "no surname";
-		age = 15;
-		avg_mark = 4;
-	}
+	Student();
 
 	//constructor with arguments
-	Student(string nm, string surnm, int a, float mark) {
-		name = nm;
-		surname = surnm;
-		age = a;
-		avg_mark = mark;
-	}
-
-	Student(string nm, string surnm) {
-		name = nm;
-		surname = surnm;
-	}
+	Student(string nm, string surnm, int a, float mark);
+	Student(string nm, string surnm);
 
 	//copy-constructor
-	Student(const Student& st) {
-		name = st.name;
-		surname = st.surname;
-		age = st.age;
-		avg_mark = st.avg_mark;
-	}
+	Student(const Student& st);
 
-	~Student() {
-		cout << "destructor" << endl;
-	}
+	~Student();
 
-	void clear() {
-		name = " no name";
-		surname = " no surname";
-		age = 0;
-		avg_mark = 0.0;
-	}
+	void clear();
+	string convert();
 
-	string convert() {
-		string msg = "";
-		msg += name + " " + surname;
-		msg += " (age: " + to_string(age);
-		msg += ", average mark: " + to_string(avg_mark) + ")";
-	}
+	string getName();
+	void setName(string n);
+	string getSurname();
+	void setSurname(string sn);
+	int getAge();
+	void setAge(int a);
+	float getAvg_mark();
+	void setAvg_mark(int am);
 };
