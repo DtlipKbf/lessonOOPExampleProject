@@ -34,8 +34,8 @@ Student Manager::findBestSt(Group group){
 Student Manager::findWorstSt(Group group){
 	Student st = group.getStudent(0);
 
-	for (int i = 1; i > group.getSize(); i++) {
-		if (st.getAvg_mark() < group.getStudent(i).getAvg_mark()) {
+	for (int i = 1; i < group.getSize(); i++) {
+		if (st.getAvg_mark() > group.getStudent(i).getAvg_mark()) {
 			st = group.getStudent(i);
 		}
 	}
