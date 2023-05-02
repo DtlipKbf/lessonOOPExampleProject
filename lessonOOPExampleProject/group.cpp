@@ -41,7 +41,8 @@ void Group::add(Student student) {
 void Group::remove(int index) {
 	if (list != NULL && index < size && index >=0) {
 		Student* temp = new Student[size - 1];
-		for (int i = 0, int j = 0; i < size; i++) {
+		int j = 0;
+		for (int i = 0; i < size; i++) {
 			if (i != index) {
 				temp[j] = list[i];
 				j++;

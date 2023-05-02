@@ -30,7 +30,6 @@ Student::Student(const Student& st) {
 }
 
 Student::~Student() {
-	cout << "destructor" << endl;
 }
 
 void Student::clear() {
