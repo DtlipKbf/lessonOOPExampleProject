@@ -2,8 +2,8 @@
 
 class Manager {
 public:
-	float calcStAvgAge(Group group);
-	float calcStAvgMark(Group group);
-	Student findBestSt(Group group);
-	Student findWorstSt(Group group);
+	static float calcStAvgAge(Group group);
+	static float calcStAvgMark(Group group);
+	static Student findBestSt(Group group);
+	static Student findWorstSt(Group group);
 };

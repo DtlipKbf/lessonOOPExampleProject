@@ -10,9 +10,7 @@ int main() {
 	group.add(st2);
 	group.add(st3);
 
-	Manager manager;
-
-	Student s = manager.findBestSt(group);
+	Student s = Manager::findBestSt(group);
 	cout << "best st: " << s.convert();
 	return 0;
 }
