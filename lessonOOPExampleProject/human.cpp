@@ -1,6 +1,7 @@
 #include "human.h"
 
 Human::Human() {
+	cout << "human default constractor" << endl;
 	name = "no name";
 	surname = "no surname";
 	age = 15;
@@ -12,7 +13,9 @@ Human::Human(string nm, string surnm, int a) {
 	age = a;
 }
 
-Human::~Human() {}
+Human::~Human() {
+	cout << "human destractor" << endl;
+}
 
 string Human::getName() {
 	return name;
