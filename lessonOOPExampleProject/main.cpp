@@ -1,7 +1,8 @@
 #include "manager.h"
 
 int main() {
-	Student st;
+	Human* h1 = new Human();
+
 
 	return 0;
 }

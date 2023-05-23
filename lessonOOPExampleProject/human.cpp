@@ -7,10 +7,10 @@ Human::Human() {
 	age = 15;
 }
 
-Human::Human(string nm, string surnm, int a) {
-	name = nm;
-	surname = surnm;
-	age = a;
+Human::Human(string name, string surname, int age) {
+	this->name = name;
+	this->surname = surname;
+	this->age = age;
 }
 
 Human::~Human() {
@@ -20,20 +20,20 @@ Human::~Human() {
 string Human::getName() {
 	return name;
 }
-void Human::setName(string n) {
-	name = n;
+void Human::setName(string name) {
+	this->name = name;
 }
 string Human::getSurname() {
 	return surname;
 }
-void Human::setSurname(string sn) {
-	surname = sn;
+void Human::setSurname(string surname) {
+	this->surname = surname;
 }
 int Human::getAge() {
 	return age;
 }
-void Human::setAge(int a) {
-	age = a;
+void Human::setAge(int age) {
+	if(age < 100 && age>0) this->age = age;
 }
 
 string Human::convert() {

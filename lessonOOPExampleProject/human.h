@@ -3,12 +3,11 @@
 
 class Human{
 private:
-	static int count;
 	string name;
 	string surname;
 	int age;
-	
-public:
+
+public:	
 	Human();	
 	Human(string nm, string surnm, int a);	
 	~Human();
